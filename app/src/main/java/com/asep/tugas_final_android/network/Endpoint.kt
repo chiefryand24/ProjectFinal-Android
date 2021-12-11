@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface Endpoint {
 
-    @GET("v2/top-headlines?country=id&apiKey=20cc7b703af1439c944bccbe9c8d46cf")
+    @GET("v2/top-headlines?country=id&apiKey=b20c0ec3d33f4ed599f61e82a2a7484e")
     suspend fun getNews(): Response<DataNews>
 
 }

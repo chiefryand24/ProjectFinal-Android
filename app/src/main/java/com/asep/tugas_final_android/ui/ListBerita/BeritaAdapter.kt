@@ -27,6 +27,10 @@ class BeritaAdapter(private val listener: BeritaAdapter.Listener): RecyclerView.
                 }
                 beritaTitle.text = article.title
                 beritaSource.text = article.source.name
+
+                this.setOnClickListener {
+                    listener.onBeritaClick(article)
+                }
             }
         }
     }

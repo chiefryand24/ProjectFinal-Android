@@ -7,9 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.asep.tugas_final_android.R
 import com.asep.tugas_final_android.model.Article
+import com.asep.tugas_final_android.ui.DetailBerita.DetailBeritaFragment
 import kotlinx.android.synthetic.main.fragment_list_berita.*
 import kotlinx.coroutines.launch
 
@@ -29,7 +31,8 @@ class ListBeritaFragment : Fragment() {
 
         adapter = BeritaAdapter(object : BeritaAdapter.Listener {
             override fun onBeritaClick(article: Article) {
-
+                DetailBeritaFragment.selectedBerita = article
+                findNavController().navigate(R.id.action_listBeritaFragment_to_detailBeritaFragment)
             }
         })
 

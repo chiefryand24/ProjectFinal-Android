@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.asep.tugas_final_android.R
+import com.asep.tugas_final_android.model.Article
 
 class DetailBeritaFragment : Fragment() {
 
@@ -22,5 +23,6 @@ class DetailBeritaFragment : Fragment() {
 
         @JvmStatic
         fun newInstance() = DetailBeritaFragment()
+        var selectedBerita: Article? = null
     }
 }

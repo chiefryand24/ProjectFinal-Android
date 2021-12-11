@@ -9,5 +9,14 @@
         android:id="@+id/listBeritaFragment"
         android:name="com.asep.tugas_final_android.ui.ListBerita.ListBeritaFragment"
         android:label="fragment_list_berita"
-        tools:layout="@layout/fragment_list_berita" />
+        tools:layout="@layout/fragment_list_berita" >
+        <action
+            android:id="@+id/action_listBeritaFragment_to_detailBeritaFragment"
+            app:destination="@id/detailBeritaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailBeritaFragment"
+        android:name="com.asep.tugas_final_android.ui.DetailBerita.DetailBeritaFragment"
+        android:label="fragment_detail_berita"
+        tools:layout="@layout/fragment_detail_berita" />
 </navigation>

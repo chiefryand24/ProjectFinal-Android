@@ -31,6 +31,11 @@ class BeritaAdapter(private val listener: BeritaAdapter.Listener): RecyclerView.
         }
     }
 
+    fun setData(list: MutableList<Article>) {
+        this.listBerita = list
+        notifyDataSetChanged()
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_berita, parent, false)
         return Holder(view)

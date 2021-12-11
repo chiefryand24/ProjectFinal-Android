@@ -8,6 +8,7 @@
         android:id="@+id/beritaThumb"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:scaleType="centerCrop"
         android:src="@color/black"/>
 
     <TextView
@@ -32,6 +33,6 @@
         android:layout_height="1dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#676767"/>
+        android:background="#D6D6D6"/>
 
 </LinearLayout>
